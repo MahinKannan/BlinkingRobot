@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+
+
+<!--Makes the robot blink when bellybutton is clicked-->
+
+
+<html>
+<body>
+
+
+<!--Face-->
+
+<div style="background-color:gray;color:white; height:90px; width:90px;  margin: 20px 0 0 330px">
+</div>
+
+
+<!--Eyes-->
+
+	<div style="width: 10px;
+    		height: 10px;
+    		background-color: yellow;
+    		animation-name: wink;
+    		animation-duration: 1s;
+    		position:absolute;
+    		margin: -50px 0 0 350px">
+	</div>
+
+	<div style="width: 10px;
+    		height: 10px;
+    		background-color: yellow;
+    		animation-name: wink;
+    		animation-duration: 1s;
+    		position:absolute;
+    		margin: -50px 0 0 390px">
+	</div>
+
+
+<!--Mouth-->
+
+<div style="background-color:white;color:white; height:5px; width:50px;  margin: -30px 0 0 350px;position:absolute">
+</div>
+
+
+<!--Neck-->
+
+<div style="background-color:blue;color:white; height:50px; width:50px;  margin: 0px 0 0 350px">
+</div> 
+
+
+<!--Hands-->
+
+<div style="background-color:gray;color:white; height:35px; width:200px;  margin: 0px 0 0 80px;position:absolute">
+</div> 
+
+<div style="background-color:gray;color:white; height:35px; width:200px;  margin: 0px 0 0 480px;position:absolute">
+</div> 
+
+
+<!--Body-->
+
+<div style="background-color:red;color:white; height:200px; width:200px;  margin: 0px 0 0 280px">
+</div> 
+
+
+<!--BellyButton-->
+<div onclick="myFunction()" style="background-color:green;color:white; height:50px; width:50px;  margin: -80px 0 0 350px; position:absolute">
+	</div> 
+
+<!--Legs-->
+
+<div style="background-color:gray;color:white; height:200px; width:30px;  margin: 0px 0 0 315px">
+</div> 
+
+<div style="background-color:gray;color:white; height:200px; width:30px;  margin: -200px 0 0 415px">
+</div> 
+
+
+
+<style> 
+
+/* Using keyframe css animation to show blink effect */ 
+
+@keyframes wink {
+    0% {background-color: yellow;}
+    50% {background-color: black;}
+    100% {background-color: yellow;}
+}
+</style>
+
+<!--Using java script to reload the page every time the bellybutton is clicked-->
+<script>
+function myFunction(){
+    location.reload();      
+}
+
+</script>
+
+ 
+</body>
+</html>
+
+
+
+
